@@ -6,7 +6,7 @@ def login():
   username = input("Enter Username: ")
   password = input("Enter Password: ")
 
-  if username != "USERNAME" and password != "PASSWORD":
+  if username != "USERNAME" or password != "PASSWORD":
     print("Wrong Username or Password")
     os.system("clear")
     login()
