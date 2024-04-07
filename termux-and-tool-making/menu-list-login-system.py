@@ -3,13 +3,13 @@ import time
 import sys
 
 def login():
-	username = input("Enter Username: ")
-	password = input("Enter Password: ")
-	
-	if username != "USERNAME" and password != "PASSWORD":
-		print("Wrong Username or Password")
-		os.system("clear")
-		login()
+  username = input("Enter Username: ")
+  password = input("Enter Password: ")
+
+  if username != "USERNAME" and password != "PASSWORD":
+    print("Wrong Username or Password")
+    os.system("clear")
+    login()
 
 def main():
   os.system("clear")
@@ -23,7 +23,7 @@ def main():
   print("\t99. About")
   print("\t00. Exit")
   
-  userInput = input("\n IHC>> ")
+  userInput = input("\n Choice >> ")
     
   if userInput == "01" or userInput == "1":
     SMS_Bombing() #This is Demo Function Call
@@ -42,4 +42,4 @@ def main():
     sys.exit()
 
 if __name__ == "__main__" :
-    main()
+  main()
